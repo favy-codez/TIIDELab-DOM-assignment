@@ -17,7 +17,8 @@ function setTheme(){
 function addRow(e){
     // override default behaviour
     e.preventDefault();
-    // document.forms returns all the forms on the page, to differentiate we give the form a name="" or if you know their hierarchy use document.forms[0] to target
+    // document.forms returns all the forms on the page,to differentiate we give the form a name="" or if you know their hierarchy use document.forms[0] to target
+    let form =document.getElementById("attendanceForm");
     // getting the table
     let attendanceTable = document.getElementById("attendance-table");
 }
