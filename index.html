@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance taking App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ATTENDANCE SHEET</h1>
+
+        <form action="">
+            <label for="Last Name">Last Name</label>
+            <input type="text" name="" id="" placeholder="Enter Your Last Name...">
+            <label for="First Name">First Name</label>
+            <input type="text" name="" id="" placeholder="Enter Your First Name...">
+            <label for="Learning Track">Learning Track</label>
+            <input type="text" name="" id="" placeholder="Enter Your Learning Track...">
+            <label for="Team">Team</label>
+            <input type="text" name="" id="" placeholder="Enter Your Team...">
+            <label for="Time">Time</label>
+            <input type="text" name="" id="" placeholder="Enter Time...">
+            <input type="submit" value="Submit">
+        </form>
+
+        <select id="themes">
+            <option>blue</option>
+            <option>red</option>
+        </select>
+        <button onclick="setTheme()">Change Theme</button>
+        
+        <table id="attendance-table">
+            <thead>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Learning Track</th>
+                <th>Team</th>
+                <th>Time</th>
+            </thead>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
