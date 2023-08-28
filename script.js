@@ -12,5 +12,9 @@ function setTheme(){
         attendanceTable.setAttribute('class', 'redTheme');
     }
     console.log(selectedTheme.value);
-    
+}
+
+function addRow(){
+    // getting the table
+    let attendanceTable = document.getElementById("attendance-table");
 }
