@@ -16,6 +16,17 @@ function setWidth(){
     console.log(selectedWidth.value);
 }
 
+// gender
+function setGender(){
+    let selectedGender = document.getElementById("gender-option");
+    if (selectedGender === "Male"){
+
+    }else{
+
+    }
+}
+
+// setting theme
 function setTheme(){
     // get the selected theme
     let selectedTheme = document.getElementById("themes");
