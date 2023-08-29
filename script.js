@@ -28,8 +28,6 @@ function addRow(e){
     e.preventDefault();
     // document.forms returns all the forms on the page,to differentiate we give the form a name="" or if you know their hierarchy use document.forms[0] to target the first form
     let attendanceForm = document.forms["attendanceForm"];
-    attendanceForm.style.backgroundColor = "";
-    attendanceForm.style.width = "";
 
     // getting data using formData- it gives you everything filled in the form
     let data = new FormData(attendanceForm);
