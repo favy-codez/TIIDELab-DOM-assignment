@@ -31,17 +31,23 @@ function addRow(e){
     // this will return the key(value)
     data.get('firstName');
 
-    // add row
+    // add row 
     let row = attendanceTable.insertRow();
-    let lastNameCol = row.insertCell().innerHTML = data.get('firstName');
+    /*
+    and add data to each cell
+    row.insertCell().innerHTML = data.get('firstName');
+    row.insertCell().innerHTML = data.get('lastName');
+    row.insertCell().innerHTML = data.get('track');
+    row.insertCell().innerHTML = data.get('team');
+    row.insertCell().innerHTML = data.get('time');
+    */
 
     // iterate through each of the form element
     for(let [key, value] of data){
         console.log(key, value);
-        
+        row.insertCell().innerHTML = data.get(key);
     }
 
-    
-    
+    console.log(data);
     
 }
