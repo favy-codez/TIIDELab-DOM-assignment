@@ -5,23 +5,15 @@ function setWidth(){
     // get the selected width
     let selectedWidth = document.getElementById("width");
 
-    if(selectedWidth.value === "60%"){
+    if(selectedWidth.value === "50%"){
         // setting the attribute
         attendanceTable.setAttribute('class', 'firstWidth');
-    }else{
+    }else if((selectedWidth.value === "70%")){
         attendanceTable.setAttribute('class', 'secondWidth');
+    }else{
+        attendanceTable.setAttribute('class', 'thirdWidth');
     }
     console.log(selectedWidth.value);
-}
-
-// gender
-function setGender(){
-    let selectedGender = document.getElementById("gender-option");
-    if (selectedGender === "Male"){
-
-    }else{
-
-    }
 }
 
 // setting theme
@@ -48,7 +40,7 @@ function addRow(e){
     console.log(firstName);
 
     // this will return the key(value)
-    data.get('firstName');
+    // data.get('firstName');
 
     // add row 
     let row = attendanceTable.insertRow();
