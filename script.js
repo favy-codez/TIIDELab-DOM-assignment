@@ -1,8 +1,8 @@
-
+// getting the table
+var attendanceTable = document.getElementById("attendance-table");
 
 function setTheme(){
-    // getting the table
-    let attendanceTable = document.getElementById("attendance-table");
+    // get the selected theme
     let selectedTheme = document.getElementById("themes");
 
     if(selectedTheme.value === "blue"){
@@ -27,6 +27,21 @@ function addRow(e){
     // getting the value of the input tags by ID
     let firstName = document.getElementById("firstName").value;
     console.log(firstName);
+
+    // this will return the key(value)
+    data.get('firstName');
+
+    // add row
+    let row = attendanceTable.insertRow();
+    let lastNameCol = row.insertCell().innerHTML = data.get('firstName');
+
+    // iterate through each of the form element
+    for(let [key, value] of data){
+        console.log(key, value);
+        
+    }
+
+    
     
     
 }
