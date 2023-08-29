@@ -31,7 +31,7 @@ form{
    margin: 1rem auto 10px auto;
 }
 
-input {
+input{
     width: 100%;
     width: 100%;
     padding: 10px 20px;
@@ -44,6 +44,7 @@ table {
     border: 1px solid;
     width: 80%;
     margin: 8px auto;
+    text-align: center;
 }
 
 table, th, td {
@@ -84,4 +85,11 @@ table, th, td {
 #width{
     width: 230px;
     margin: 0 0 0 33px;
+}
+
+/* hover state for buttons */
+#width-btn:hover, #theme-btn:hover{
+    background-color: rgb(99, 90, 90);
+    color: #fff;
+    transition: 0.3s;
 }
