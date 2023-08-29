@@ -15,12 +15,16 @@
             <input type="text" name="firstName" id="firstName" placeholder="Enter Your Last Name...">
             <label for="First Name">First Name</label>
             <input type="text" name="lastName" id="lastName" placeholder="Enter Your First Name...">
-            <label for="Learning Track">Learning Track</label>
-            <input type="text" name="track" id="track" placeholder="Enter Your Learning Track...">
-            <label for="Team">Team</label>
-            <input type="text" name="team" id="team" placeholder="Enter Your Team...">
-            <label for="Time">Time</label>
-            <input type="number" name="time" id="time" placeholder="Enter Time...">
+            <label for="Phone Number">Learning Track</label>
+            <input type="text" name="phone" id="phone" placeholder="Enter Your Phone Number...">
+            <label for="Email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter Your Email Address...">
+            <label for="Gender">Gender</label>
+            <select name="" id="">
+                <option value="">Enter Gender...</option>
+                <option value="">Female</option>
+                <option value="">Male</option>
+            </select>
             <input type="submit" value="Submit">
         </form>
 
@@ -29,19 +33,23 @@
             <option>red</option>
         </select>
         <input type="color" name="" id="">
+        <!-- select width -->
+        <select name="" id="">
+            <option value=""></option>
+        </select>
         <button onclick="setTheme()">Change Theme</button>
 
         <table id="attendance-table">
             <thead>
                 <th>Last Name</th>
                 <th>First Name</th>
-                <th>Learning Track</th>
-                <th>Team</th>
-                <th>Time</th>
+                <th>Phone Number</th>
+                <th>Email Address</th>
+                <th>Gender</th>
             </thead>
         </table>
     </div>
-    <!-- every body in your team phone number email address  gender  width should be configurable-->
+    <!--   width should be configurable-->
 
     <script src="./script.js"></script>
 </body>

@@ -19,6 +19,8 @@ function addRow(e){
     e.preventDefault();
     // document.forms returns all the forms on the page,to differentiate we give the form a name="" or if you know their hierarchy use document.forms[0] to target the first form
     let attendanceForm = document.forms["attendanceForm"];
+    attendanceForm.style.backgroundColor = "";
+    attendanceForm.style.width = "";
 
     // getting data using formData- it gives you everything filled in the form
     let data = new FormData(attendanceForm);
@@ -37,9 +39,9 @@ function addRow(e){
     and add data to each cell
     row.insertCell().innerHTML = data.get('firstName');
     row.insertCell().innerHTML = data.get('lastName');
-    row.insertCell().innerHTML = data.get('track');
-    row.insertCell().innerHTML = data.get('team');
-    row.insertCell().innerHTML = data.get('time');
+    row.insertCell().innerHTML = data.get('phone');
+    row.insertCell().innerHTML = data.get('Email');
+    row.insertCell().innerHTML = data.get('gender');
     */
 
     // iterate through each of the form element
