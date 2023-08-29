@@ -1,17 +1,24 @@
 // getting the table
 var attendanceTable = document.getElementById("attendance-table");
 
+function setWidth(){
+    // get the selected width
+    let selectedWidth = document.getElementById("width");
+
+    if(selectedWidth.value === "60%"){
+        // setting the attribute
+        attendanceTable.setAttribute('class', 'firstWidth');
+    }else if(selectedWidth.value === "90%"){
+        attendanceTable.setAttribute('class', 'secondWidth');
+    }else{
+        attendanceTable.setAttribute('class', 'thirdWidth');
+    }
+    console.log(selectedWidth.value);
+}
+
 function setTheme(){
     // get the selected theme
     let selectedTheme = document.getElementById("themes");
-
-    if(selectedTheme.value === "blue"){
-        // setting the attribute
-        attendanceTable.setAttribute('class', 'blueTheme');
-    }else{
-        attendanceTable.setAttribute('class', 'redTheme');
-    }
-    console.log(selectedTheme.value);
 }
 
 function addRow(e){

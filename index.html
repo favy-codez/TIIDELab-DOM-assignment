@@ -12,32 +12,33 @@
 
         <form name="attendanceForm" onsubmit="addRow(event)">
             <label for="Last Name">Last Name</label>
-            <input type="text" name="firstName" id="firstName" placeholder="Enter Your Last Name...">
+            <input type="text" name="firstName" id="firstName" placeholder="Enter Your Last Name... " required>
             <label for="First Name">First Name</label>
-            <input type="text" name="lastName" id="lastName" placeholder="Enter Your First Name...">
+            <input type="text" name="lastName" id="lastName" placeholder="Enter Your First Name..." required>
             <label for="Phone Number">Learning Track</label>
-            <input type="text" name="phone" id="phone" placeholder="Enter Your Phone Number...">
+            <input type="text" name="phone" id="phone" placeholder="Enter Your Phone Number..." required>
             <label for="Email">Email</label>
-            <input type="text" name="email" id="email" placeholder="Enter Your Email Address...">
-            <label for="Gender">Gender</label>
+            <input type="text" name="email" id="email" placeholder="Enter Your Email Address..." required>
+            <label for="Gender">Enter Gender...</label>
             <select name="" id="">
-                <option value="">Enter Gender...</option>
                 <option value="">Female</option>
                 <option value="">Male</option>
             </select>
             <input type="submit" value="Submit">
         </form>
 
-        <select id="themes">
-            <option>blue</option>
-            <option>red</option>
-        </select>
-        <input type="color" name="" id="">
-        <!-- select width -->
-        <select name="" id="">
-            <option value=""></option>
-        </select>
-        <button onclick="setTheme()">Change Theme</button>
+        <div class="option-container">
+            <!-- change color -->
+            <input type="color" name="color" id="themes">
+            <button onclick="setTheme()">Change Theme</button>
+            <!-- allows user to select width -->
+            <select name="" id="width">
+                <option value="">Select width</option>
+                <option value="">60%</option>
+                <option value="">90%</option>
+            </select>
+            <button onclick="setWidth()">Change Width</button>
+        </div>
 
         <table id="attendance-table">
             <thead>

@@ -13,18 +13,12 @@ h1{
     margin: 2rem 0 0 0;
 }
 
-.blueTheme{
-    background-color: blue;
-    color: #fff;
-    width: 800px;
-    margin: auto;
+.firstWidth{
+    width: 90%;
 }
 
-.redTheme{
-    background-color: red;
-    color: #fff;
-    width: 800px;
-    margin: auto;
+.thirdWidth{
+    width: 80%;
 }
 
 form{
@@ -37,5 +31,28 @@ input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 80%;
+    margin: 8px auto;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+.option-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 8px 0 -7px 0;
+}
+
+#themes{
+    width: 30px;
 }
