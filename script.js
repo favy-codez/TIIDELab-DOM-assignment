@@ -8,10 +8,8 @@ function setWidth(){
     if(selectedWidth.value === "60%"){
         // setting the attribute
         attendanceTable.setAttribute('class', 'firstWidth');
-    }else if(selectedWidth.value === "90%"){
-        attendanceTable.setAttribute('class', 'secondWidth');
     }else{
-        attendanceTable.setAttribute('class', 'thirdWidth');
+        attendanceTable.setAttribute('class', 'secondWidth');
     }
     console.log(selectedWidth.value);
 }
@@ -30,6 +28,7 @@ function setGender(){
 function setTheme(){
     // get the selected theme
     let selectedTheme = document.getElementById("themes");
+    attendanceTable.style.backgroundColor = selectedTheme.value;
 }
 
 function addRow(e){
